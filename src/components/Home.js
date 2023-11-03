@@ -78,6 +78,7 @@ const Home = () => {
     fetch();
   }, [state]);
   useEffect(() => {
+    console.log("hello");
     const end = currentpage * pageitems;
     const start = end - pageitems;
     const sliceproducts = products.slice(start, end);
